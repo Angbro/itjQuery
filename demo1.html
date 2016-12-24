@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>huadong</title>
+</head>
+<style type="text/css">
+#contain{height: 100px;width: 800px;display:none;}
+#down{height: 50px;width:800px;background: #e7e7e7}
+#area{width:200px;height: 100px;background: #ff0;float: right;display: none;}
+#area1{width:200px;height: 100px;background: #444;display:none;float: right}
+#area2{width:200px;height: 100px;background: #545;display:none;float: right}
+#area3{width:200px;height: 100px;background: #000;display:none;}
+#contain1{height: 100px;width: 800px;display: none}
+#book{width:200px;height: 100px;background: #ff0;float: right;display: none;}
+#book1{width:200px;height: 100px;background: #444;display:none;float: right}
+#book2{width:200px;height: 100px;background: #545;display:none;float: right}
+#book3{width:200px;height: 100px;background: #000;display:none;}
+#contain2{height: 100px;width: 800px;display: none}
+</style>
+<script src="./jquery-1.8.3.min.js"></script>
+<script >
+$(document).ready(function(){
+   $("#btn").click(function(){
+    $("#contain").slideToggle(200);
+   	$("#area").slideToggle(500);
+   	$("#area1").slideToggle(400);
+   	$("#area2").slideToggle(300);
+   	$("#area3").slideToggle(200);
+   	
+   });
+
+
+});
+$(document).ready(function(){
+	$("#area").hover(function(){
+       $("#contain2").fadeToggle(200);
+      
+  
+   });
+
+});
+$(document).ready(function(){
+	$("#btn1").click(function(){
+	 $("#contain1").slideToggle(200);
+   	$("#book").slideToggle(500);
+   	$("#book1").slideToggle(400);
+   	$("#book2").slideToggle(300);
+   	$("#book3").slideToggle(200);
+   	
+   });
+});
+
+</script>
+<body>
+<button id="btn">start</button>
+<button id="btn1">start</button>
+<div id="contain">
+  <div id="area">衣服</div>
+  <div id="area1">鞋子</div>
+  <div id="area2">上衣</div>
+  <div id="area3">帽子</div>
+</div>
+<div id="contain1">
+  <div id="book">英语</div>
+  <div id="book1">数学</div>
+  <div id="book2">物理</div>
+  <div id="book3">生物</div>
+</div>
+<div id="contain2">
+	哈哈哈哈
+</div>
+<div id="down">
+	<div id="contain1">
+		<div id="book">衣服</div>
+        <div id="book1">鞋子</div>
+	</div>
+</div>
+<div id="add">
+	
+</div>
+</body>
+</html>

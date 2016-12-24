@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+#area{width:200px;height: 100px;background: #ff0;display:none;}
+
+</style>
+<script src="./jquery-1.8.3.min.js"></script>
+<script >
+	$(document).ready(function(){
+		$("#btn").click(function(){
+            $("#area").fadeToggle(1000);
+
+		});
+	});
+</script>
+<body>
+<button id="btn">start</button>
+<div id="area">
+	 
+</div>
+</body>
+</html>
